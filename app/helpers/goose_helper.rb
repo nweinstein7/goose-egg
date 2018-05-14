@@ -1,0 +1,2 @@
+module GooseHelper
+end
