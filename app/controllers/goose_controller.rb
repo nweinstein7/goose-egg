@@ -1,4 +1,4 @@
 class GooseController < ApplicationController
-  def search
+  def index
   end
 end

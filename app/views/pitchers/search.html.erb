@@ -1,0 +1,28 @@
+<h1>Pitchers</h1>
+
+  <hr>
+
+  <%= form_tag pitchers_search_path, method: 'get' do %>
+    <%= label_tag :query %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag :Search %>
+  <% end %>
+
+  <% if @pitchers %>
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @pitchers.each do |pitcher| %>
+            <tr>
+                <td><%= pitcher.name %></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+  <% end %>
+

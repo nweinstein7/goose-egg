@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class GooseControllerTest < ActionDispatch::IntegrationTest
-  test "should get search" do
-    get goose_search_url
+  test "should get index" do
+    get goose_index_url
     assert_response :success
   end
 

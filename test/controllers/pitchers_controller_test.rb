@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class PitchersControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get search" do
+    get pitchers_search_url
+    assert_response :success
+  end
+
 end

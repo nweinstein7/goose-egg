@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'goose/search'
-
+  get 'pitchers/search'
   resources :pitchers
-
-  root 'goose#search'
+  root 'goose#index'
 end
