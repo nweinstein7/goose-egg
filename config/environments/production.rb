@@ -103,4 +103,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # elastic search endpoint
+  Elasticsearch::Model.client =
+    Elasticsearch::Client.new log: true,
+                              host: 'https://search-goose-egg-hipkndaniycdmqdw3tyxajtcxe.us-west-2.es.amazonaws.com'
 end
