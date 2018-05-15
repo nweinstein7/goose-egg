@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# db migration for creating pitchers
 class CreatePitchers < ActiveRecord::Migration[5.2]
+  # rubocop:disable MethodLength
   def change
     create_table :pitchers do |t|
       t.string :name
@@ -18,5 +20,6 @@ class CreatePitchers < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    # rubocop:enable MethodLength
   end
 end
