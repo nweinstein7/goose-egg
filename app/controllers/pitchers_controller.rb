@@ -6,6 +6,6 @@ class PitchersController < ApplicationController
     query = {
       match: { name: params[:q] }
     }
-    @pitchers = Pitcher.search(size: 10, query: query).records if params[:q]
+    @pitchers = Pitcher.search(size: 10, query: query) if params[:q]
   end
 end

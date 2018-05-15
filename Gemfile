@@ -80,3 +80,6 @@ gem 'rubocop', '~> 0.56.0'
 
 # Added at 2018-05-14 20:52:59 -0700 by Nate:
 gem 'rake', '~> 12.3'
+
+# Added at 2018-05-15 01:13:04 -0700 by Nate:
+gem "elasticsearch-persistence", "~> 5.0"

@@ -12,14 +12,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 
-puts 'creating index for pitchers'
-Pitcher.__elasticsearch__.create_index! force: true
-
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'goose_rawdata.csv'))
 csv = CSV.parse(csv_text, headers: true)
 puts 'reading data from csv'
 csv.each do |row|
   puts row.to_hash
-  Pitcher.create!(row.to_hash)
+  Pitcher.create(row.to_hash)
 end
 puts 'done loading data'
