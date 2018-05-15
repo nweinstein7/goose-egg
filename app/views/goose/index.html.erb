@@ -1,6 +1,13 @@
 <main id="home">
     <div class="container">
-        <h1 class="deep-orange-text text-accent-2">Explore Data for Pitchers' Goose Eggs</h1>
-        <%= link_to 'Pitching Data', controller: 'pitchers', action: 'search' %>
+        <h1 class="white-text text-accent-2">Explore Data for Pitchers' Goose Eggs</h1>
+        <div class="card-panel white lighten-5">
+            <span class="black-text">
+            Saves fail to capture the true value of a relief pitcher. With the goose egg, statisticians
+            at FiveThirtyEight have captured something more essential to an effective relief appearance.
+            A goose egg is a "clutch, scoreless relief inning". Learn more within.
+            </span>
+        </div>
+        <%= link_to 'Learn More', { controller: 'pitchers', action: 'search' }, { class: "btn" } %>
     </div>
 </main>
