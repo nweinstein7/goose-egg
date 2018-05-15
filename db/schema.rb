@@ -13,7 +13,8 @@
 # (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended that you check this file into your version control system.
+# It's strongly recommended that you check this file into your version control
+# system.
 
 ActiveRecord::Schema.define(version: 20_180_514_061_407) do
   create_table 'pitchers', force: :cascade do |t|
