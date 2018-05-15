@@ -77,3 +77,6 @@ gem 'elasticsearch', '~> 5.0'
 
 # Added at 2018-05-14 20:05:31 -0700 by Nate:
 gem 'rubocop', '~> 0.56.0'
+
+# Added at 2018-05-14 20:52:59 -0700 by Nate:
+gem "rake", "~> 12.3"

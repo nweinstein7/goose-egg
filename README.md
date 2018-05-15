@@ -1,5 +1,7 @@
 # Goose Egg
 
+[![Build Status](https://travis-ci.org/nweinstein7/goose-egg.svg?branch=master)](https://travis-ci.org/nweinstein7/goose-egg)
+
 This is a practice Ruby on Rails application using Elasticsearch to display some [baseball pitching data](https://github.com/fivethirtyeight/data/tree/master/goose) from fivethirtyeight.
 
 ## Run locally
@@ -33,11 +35,3 @@ Run `bin/rails test`.
 ### Linting
 
 Run `bundle exec rubocop --auto-correct`.
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
