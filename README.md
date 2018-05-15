@@ -30,6 +30,10 @@ This is a practice Ruby on Rails application using Elasticsearch to display some
 
 Run `bin/rails test`.
 
+### Linting
+
+Run `bundle exec rubocop --auto-correct`.
+
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
