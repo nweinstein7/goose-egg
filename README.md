@@ -34,3 +34,7 @@ Run `bin/rails test`.
 ### Linting
 
 Run `bundle exec rubocop --auto-correct`.
+
+## Deployment
+
+The application is hosted at http://goose-egg-env.7metj78wze.us-west-2.elasticbeanstalk.com.
