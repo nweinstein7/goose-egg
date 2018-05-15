@@ -1,19 +1,34 @@
-# README
+# Goose Egg
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a practice Ruby on Rails application using Elasticsearch to display some [baseball pitching data](https://github.com/fivethirtyeight/data/tree/master/goose) from fivethirtyeight.
 
-Things you may want to cover:
+## Run locally
 
-* Ruby version
+### Prerequisites:
 
-* System dependencies
+* Ruby version: 2.5.1p57
+* [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) version: 6.2.4.
+* Rails version: 5.2.1
+* [Bundler](https://bundler.io/v1.16/#getting-started) version: 1.16.1.
 
-* Configuration
+### Steps
 
-* Database creation
+1\. Start Elasticsearch by running `elasticsearch` in the terminal.
 
-* Database initialization
+2\. Seed elasticsearch with pitching data. 
+
+* First, run `rake db:migrate` to set up the necessary indices in elasticsearch. 
+* Then, run `rake db:seed` to import all the data from the spreadsheet. May take a bit of time to finish.
+
+3\. Run `bundle install` to install dependencies.
+
+4\. Start the server by running `bin/rails server`.
+
+5\. Hit the app at http://localhost:3000.
+
+### Running Tests
+
+Run `bin/rails test`.
 
 * How to run the test suite
 

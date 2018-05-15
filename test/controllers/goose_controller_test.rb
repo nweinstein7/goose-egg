@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class GooseControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get goose_index_url
+  test 'should get root' do
+    get root_url
     assert_response :success
   end
-
 end

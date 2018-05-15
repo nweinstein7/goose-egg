@@ -1,28 +1,39 @@
-<h1>Pitchers</h1>
+<main>
+  <div class="container">
+    <h1>Pitchers</h1>
+      <%= form_tag pitchers_search_path, method: 'get' do %>
+        <div class="input-field">
+          <%= label_tag :query %>
+          <%= text_field_tag :q, params[:q] %>
+        </div>
+        <%= submit_tag :Search, class: 'btn' %>
+      <% end %>
 
-  <hr>
+      <% if @pitchers %>
+        <table>
+            <thead>
+                <tr>
+                <th>Year</th>
+                <th>Name</th>
+                <th>Team</th>
+                <th>League</th>
+                <th>Goose Eggs</th>
+                </tr>
+            </thead>
 
-  <%= form_tag pitchers_search_path, method: 'get' do %>
-    <%= label_tag :query %>
-    <%= text_field_tag :q, params[:q] %>
-    <%= submit_tag :Search %>
-  <% end %>
-
-  <% if @pitchers %>
-    <table>
-        <thead>
-            <tr>
-            <th>Name</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <% @pitchers.each do |pitcher| %>
-            <tr>
-                <td><%= pitcher.name %></td>
-            </tr>
-            <% end %>
-        </tbody>
-    </table>
-  <% end %>
+            <tbody>
+                <% @pitchers.each do |pitcher| %>
+                <tr>
+                    <td><%= pitcher.year %></td>
+                    <td><%= pitcher.name %></td>
+                    <td><%= pitcher.team %></td>
+                    <td><%= pitcher.league %></td>
+                    <td><%= pitcher.goose_eggs %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+      <% end %>
+    </div>
+</main>
 

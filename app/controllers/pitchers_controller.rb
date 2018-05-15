@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controller for displaying pitching data
 class PitchersController < ApplicationController
   def search
     query = {
