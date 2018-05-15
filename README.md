@@ -19,8 +19,7 @@ This is a practice Ruby on Rails application using Elasticsearch to display some
 
 2\. Seed elasticsearch with pitching data. 
 
-* First, run `rake db:migrate` to set up the necessary indices in elasticsearch. 
-* Then, run `rake db:seed` to import all the data from the spreadsheet. May take a bit of time to finish.
+* Run `rake elasticsearch:seed` to import all the data from the spreadsheet. May take a bit of time to finish.
 
 3\. Run `bundle install` to install dependencies.
 
