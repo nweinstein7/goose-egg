@@ -7,10 +7,5 @@ require 'rails/test_help'
 # rubocop:disable ClassAndModuleChildren
 class ActiveSupport::TestCase
   # rubocop:enable ClassAndModuleChildren
-
-  # Setup all fixtures in test/fixtures/*.yml for
-  # all tests in alphabetical order.
-  fixtures :all
-
   # Add more helper methods to be used by all tests here...
 end
